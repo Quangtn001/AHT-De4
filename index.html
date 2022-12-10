@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymax | Homepage</title>
+    <!-- Link css file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css"> -->
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Add font -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="container">
+                <div class="header-content row">
+                    <div class="logo col-3">
+                        <img src="./image/Logo.png" alt="">
+                    </div>
+                    <!-- Menu -->
+                    <div class="navbar col-6" id="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Menu -->
+                    <div class="header-right col-3">
+                        <!-- <div class="search">
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <i class="hide fa-solid fa-chevron-right"></i>
+                                <input type="text" placeholder="Search for Product...">
+                                <button type=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div> -->
+                        <div class="header-right-item search-click">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="header-right-item">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+                        <div class="header-right-item">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="icon-responsive"><i class="fa-solid fa-bars"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- slider -->
+            <div class="slider swiper">
+                <div class="slider-content swiper-wrapper">
+                    <div class="slider-item swiper-slide">
+                        <div class="container">
+                            <div class="slider-detail">
+                                <p class="slider-heading">Dumbbells Shop</p>
+                                <p class="slider-title">Best body fitness</p>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                                <a href="#">
+                                    <p class="btn">SHOP NOW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-image">
+                            <div class="image-bg"><img src="./image/hero.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item swiper-slide">
+                        <div class="container">
+                            <div class="slider-detail">
+                                <p class="slider-heading">Dumbbells Shop</p>
+                                <p class="slider-title">Best body fitness</p>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                                <a href="#">
+                                    <p class="btn">SHOP NOW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-image">
+                            <div class="image-bg"><img src="./image/hero.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item swiper-slide">
+                        <div class="container">
+                            <div class="slider-detail">
+                                <p class="slider-heading">Dumbbells Shop</p>
+                                <p class="slider-title">Best body fitness</p>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                                <a href="#">
+                                    <p class="btn">SHOP NOW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-image">
+                            <div class="image-bg"><img src="./image/hero.png" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="slider-item swiper-slide">
+                        <div class="container">
+                            <div class="slider-detail">
+                                <p class="slider-heading">Dumbbells Shop</p>
+                                <p class="slider-title">Best body fitness</p>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                                <a href="#">
+                                    <p class="btn">SHOP NOW</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-image">
+                            <div class="image-bg"><img src="./image/hero.png" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- End slider -->
+        </div>
+        <!-- End Main Content -->
+    </div>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="/js/main.js"></script>
+    <!-- <script src="./js/slick.min.js"></script> -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper(".slider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 5000
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
