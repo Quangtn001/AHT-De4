@@ -3,25 +3,35 @@
     background-color: rgba(13, 8, 7, 0.6);
     color: @light-text;
     line-height: 100px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     z-index: 200;
     &-content{
         position: relative;
         .logo{
             display: flex;
             align-items: center;
+            position: relative;
+
             img{
                 width: 200px;
+                // position: absolute;
+                // left: 0px;
             }
         }
         .navbar{
             padding: 0;
+            position: relative;
             ul{
                 display: flex;
+                position: absolute;
+                top: 3px;
+                right: 5px;
                 li{
                     margin: 0 27px;
+                    
                     &:last-child {
                         margin-right: 0;
                     }
@@ -45,12 +55,14 @@
     &-right{
         display: flex;
         justify-content: right;
+        
 
         &-item{
             font-size: 16px;
             margin: 0 25px;
             position: relative;
             cursor: pointer;
+            
             &:hover{
                 color: @red-color;
             }

@@ -88,9 +88,10 @@ ul li {
   background-color: rgba(13, 8, 7, 0.6);
   color: #ffffff;
   line-height: 100px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 200;
 }
 .header-content {
@@ -99,15 +100,20 @@ ul li {
 .header-content .logo {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .header-content .logo img {
   width: 200px;
 }
 .header-content .navbar {
   padding: 0;
+  position: relative;
 }
 .header-content .navbar ul {
   display: flex;
+  position: absolute;
+  top: 3px;
+  right: 5px;
 }
 .header-content .navbar ul li {
   margin: 0 27px;
@@ -174,9 +180,6 @@ ul li {
 .slider .next-slider {
   left: 20px;
 }
-.slider .swiper-pagination {
-  color: #ccc;
-}
 .slider .prev-slider {
   right: 5px;
 }
@@ -232,6 +235,52 @@ ul li {
   background-color: #fff;
   color: #000000;
   transition: all 0.5s;
+}
+.main-content .categories {
+  position: relative;
+  z-index: 1000;
+}
+.main-content .categories .categories-content {
+  z-index: 1111;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-77px);
+}
+.main-content .categories .categories-content-item {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+}
+.main-content .categories .categories-content-item .item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-content .categories .categories-content-item .item-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 35px;
+  text-align: center;
+  background-color: #fff;
+}
+.main-content .categories .categories-content-item .item-content .item-icon {
+  width: 70px;
+}
+.main-content .categories .categories-content-item .item-content .item-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 19px 0;
+  text-transform: uppercase;
+}
+.main-content .categories .categories-content-item .item-content .item-desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  line-height: 1.5;
+  margin-top: 25px;
 }
 @font-face {
   font-family: 'Poppins';
