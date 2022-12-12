@@ -1,15 +1,17 @@
+
 .header{
     width: 100%;
     background-color: rgba(13, 8, 7, 0.6);
     color: @light-text;
     line-height: 100px;
-    position: fixed;
+    z-index: 200;
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    z-index: 200;
     &-content{
         position: relative;
+        display: flex;
+        justify-content: space-between;
         .logo{
             display: flex;
             align-items: center;

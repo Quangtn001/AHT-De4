@@ -1,13 +1,89 @@
-@media screen and(max-width:1200px) {
+@media all and (max-width: 1200px) {
+    .header {
+        .header-content {
+            .navbar {
+                display: none;
+            }
+            .header-right{
+                .icon-responsive{
+                    font-size: 20px;
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    .main-content{
+        .slider-detail{
+            .slider-heading{
+                font-size: 40px !important;
+                margin-bottom: 10px !important;
+            }
+            .slider-title{
+                font-size: 26px !important;
+                margin-bottom: 15px !important;
+
+            }
+        }
+        .categories-content{
+            padding: 0 15px;
+            overflow: hidden;
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    .header{
+        line-height: 60px;
+    }
+    .main-content{
+        .slider-detail{
+            .slider-heading{
+                font-size: 34px !important;
+                margin-bottom: 10px !important;
+            }
+            .slider-title{
+                font-size: 24px !important;
+                margin-bottom: 15px !important;
+
+            }
+        }
+        .categories-content{
+            display: flex;
+            .categories-content-item{
+                border-bottom: 1px solid #777;
+                flex: 0 0 50%;
+            }
+        }
+        .listing{
+            .listing-content{
+                .listing-item{
+                    .col-4()!important;
+                }
+            }
+        }
+    }
     
 }
 
-@media screen and(max-width:1024px) {
-    
-}
-
-@media screen and(max-width:768px) {
-    
+@media all and(max-width:768px) {
+    .main-content{
+        .slider-detail{
+            .slider-heading{
+                font-size: 30px !important;
+                margin-bottom: 8px !important;
+            }
+            .slider-title{
+                font-size: 20px !important;
+            }
+        }
+    }
+    .listing{
+        .listing-content{
+            .listing-item{
+                .col-6()!important;
+            }
+        }
+    }
 }
 
 @media screen and(max-width:576px) {
